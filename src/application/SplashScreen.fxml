@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="application.SplashController"
+      alignment="CENTER" spacing="40" prefWidth="600" prefHeight="400"
+      style="-fx-background-color: #E0F7FA;">
+
+    <!-- Game title -->
+    <Label text="Battleship Game" 
+           style="-fx-font-size: 48; -fx-font-weight: bold; -fx-text-fill: navy;"
+           alignment="CENTER"/>
+
+    <!-- Decorative waves using arcs -->
+    <StackPane>
+        <Arc radiusX="250" radiusY="40" startAngle="0" length="180" fill="#B2EBF2" />
+        <Arc radiusX="220" radiusY="35" startAngle="180" length="180" fill="#80DEEA" />
+        <Arc radiusX="200" radiusY="30" startAngle="0" length="180" fill="#4DD0E1" />
+    </StackPane>
+
+    
+
+    <!-- Start button -->
+    <Button fx:id="startGameBtn" text="Start Game" 
+            style="-fx-font-size: 24; -fx-background-radius: 15; -fx-background-color: #00BCD4; -fx-text-fill: white;" 
+            minWidth="200" minHeight="60"/>
+    
+</VBox>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="600" prefWidth="900" spacing="50" style="-fx-background-color: #e8f4f8;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="application.BattleController">
+
+    <VBox alignment="CENTER" spacing="10">
+        <Label fx:id="player1Label" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Player 1 Board (Target of Player 2)" />
+        <GridPane fx:id="player1BattleGrid" gridLinesVisible="true" prefHeight="360" prefWidth="360" />
+        <Label fx:id="player1ShipsLabel" text="Ships Remaining: 6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="10">
+        <Label fx:id="player2Label" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Player 2 Board (Target of Player 1)" />
+        <GridPane fx:id="player2BattleGrid" gridLinesVisible="true" prefHeight="360" prefWidth="360" />
+        <Label fx:id="player2ShipsLabel" text="Ships Remaining: 6" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+    </VBox>
+
+</HBox>

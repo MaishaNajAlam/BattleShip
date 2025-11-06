@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="application.GameOverController"
+      alignment="CENTER" spacing="30" prefWidth="600" prefHeight="400" style="-fx-background-color: #E0F7FA">
+    
+    <Label fx:id="winnerLabel" text="Player X wins!"
+           style="
+                -fx-font-size: 32px;
+                -fx-font-weight: bold;
+                -fx-text-fill: linear-gradient(from 0% 0% to 0% 100%, #B22222, #8B0000); /* dark reds like hits */
+                -fx-font-family: 'Segoe UI', Arial, sans-serif;
+                -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 1, 1);
+                -fx-padding: 20 40 20 40;
+                -fx-background-color: rgba(178, 34, 34, 0.15); /* subtle firebrick bg */
+                -fx-background-radius: 15;
+                -fx-alignment: center;
+           " />
+    
+    <HBox spacing="20" alignment="CENTER">
+        <Button fx:id="restartBtn" text="Restart Game"
+                style="
+                    -fx-font-size: 18px;
+                    -fx-background-color: #B22222;  /* firebrick red */
+                    -fx-text-fill: white;
+                    -fx-background-radius: 8;
+                    -fx-padding: 8 20 8 20;
+                    -fx-cursor: hand;
+                " />
+        <Button fx:id="exitBtn" text="Exit"
+                style="
+                    -fx-font-size: 18px;
+                    -fx-background-color: #555555; /* neutral dark gray */
+                    -fx-text-fill: white;
+                    -fx-background-radius: 8;
+                    -fx-padding: 8 20 8 20;
+                    -fx-cursor: hand;
+                " />
+    </HBox>
+    
+</VBox>
